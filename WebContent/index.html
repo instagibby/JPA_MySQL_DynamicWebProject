@@ -12,6 +12,20 @@
 		<input type = "text" name = "breed" id="breed">
 		<input type = "submit" value="Add Pet">
 	</form>
-	<p><a href = "viewAllPetsServlet">View the complete list</a></p>
+	<p><a href = "viewAllPetsServlet">View the complete list of Cats</a></p>
+	
+	<br>
+	<form action = "addOwnerServlet" method="post">
+		<label for="name">Name:</label>
+		<input type ="text" name = "name" id="name" required>
+		<br>
+		<label for="bday">Birthday:</label>
+		<input type = "date" name = "bday" id="bday" required>
+		<br>
+		<label for="catId">Cat Overlord Id</label>
+		<input type="number" min="0" required id=catOverlordId name="catOverlordId">
+		<input type = "submit" value="Add Owner">
+	</form>
+	<p><a href = "viewAllOwnersServlet">View the Hoomans</a></p>
 </body>
 </html>
